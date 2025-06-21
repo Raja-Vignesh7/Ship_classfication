@@ -189,3 +189,42 @@
 2025-06-21 16:23:47,107 - INFO - 127.0.0.1 - - [21/Jun/2025 16:23:47] "POST /classify HTTP/1.1" 200 -
 2025-06-21 16:24:17,782 - INFO - Performing cleanup on shutdown...
 2025-06-21 16:24:18,924 - INFO - Performing cleanup on shutdown...
+2025-06-21 17:03:42,836 - INFO - Directory enshured: C:\Users\bvrvg\Desktop\Files\Projects\Ship_classfication\server\..\server\temp
+2025-06-21 17:03:42,837 - INFO - Directory enshured: C:\Users\bvrvg\Desktop\Files\Projects\Ship_classfication\server\..\archive
+2025-06-21 17:03:42,840 - INFO - Starting Ship Classification Server...
+2025-06-21 17:03:42,841 - INFO - Server configuration:
+2025-06-21 17:03:42,841 - INFO -   - Max file size: 16MB
+2025-06-21 17:03:42,842 - INFO -   - Allowed extensions: {'gif', 'webp', 'bmp', 'tiff', 'jpg', 'jpeg', 'png'}
+2025-06-21 17:03:42,842 - INFO -   - Temp folder: C:\Users\bvrvg\Desktop\Files\Projects\Ship_classfication\server\..\server\temp
+2025-06-21 17:03:42,843 - INFO -   - Archive folder: C:\Users\bvrvg\Desktop\Files\Projects\Ship_classfication\server\..\archive
+2025-06-21 17:03:42,899 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.155.54:5000
+2025-06-21 17:03:42,899 - INFO - [33mPress CTRL+C to quit[0m
+2025-06-21 17:03:42,930 - INFO -  * Restarting with watchdog (windowsapi)
+2025-06-21 17:03:51,379 - INFO - Directory enshured: C:\Users\bvrvg\Desktop\Files\Projects\Ship_classfication\server\..\server\temp
+2025-06-21 17:03:51,381 - INFO - Directory enshured: C:\Users\bvrvg\Desktop\Files\Projects\Ship_classfication\server\..\archive
+2025-06-21 17:03:51,381 - INFO - Starting Ship Classification Server...
+2025-06-21 17:03:51,382 - INFO - Server configuration:
+2025-06-21 17:03:51,382 - INFO -   - Max file size: 16MB
+2025-06-21 17:03:51,382 - INFO -   - Allowed extensions: {'gif', 'webp', 'bmp', 'jpg', 'jpeg', 'tiff', 'png'}
+2025-06-21 17:03:51,384 - INFO -   - Temp folder: C:\Users\bvrvg\Desktop\Files\Projects\Ship_classfication\server\..\server\temp
+2025-06-21 17:03:51,384 - INFO -   - Archive folder: C:\Users\bvrvg\Desktop\Files\Projects\Ship_classfication\server\..\archive
+2025-06-21 17:03:51,402 - WARNING -  * Debugger is active!
+2025-06-21 17:03:51,416 - INFO -  * Debugger PIN: 981-686-749
+2025-06-21 17:03:51,551 - INFO - 127.0.0.1 - - [21/Jun/2025 17:03:51] "GET / HTTP/1.1" 200 -
+2025-06-21 17:03:51,743 - INFO - 127.0.0.1 - - [21/Jun/2025 17:03:51] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-21 17:03:51,768 - INFO - 127.0.0.1 - - [21/Jun/2025 17:03:51] "[36mGET /static/utils/About_image.jpg HTTP/1.1[0m" 304 -
+2025-06-21 17:03:51,770 - INFO - 127.0.0.1 - - [21/Jun/2025 17:03:51] "[36mGET /static/utils/main_image.webp HTTP/1.1[0m" 304 -
+2025-06-21 17:03:51,920 - INFO - 127.0.0.1 - - [21/Jun/2025 17:03:51] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-06-21 17:04:02,129 - INFO - File saved to temp: C:\Users\bvrvg\Desktop\Files\Projects\Ship_classfication\server\..\server\temp\645701_20250621_170402_8d9dd065.jpg
+2025-06-21 17:04:02,131 - INFO - Starting prediction, file - C:\Users\bvrvg\Desktop\Files\Projects\Ship_classfication\server\..\server\temp\645701_20250621_170402_8d9dd065.jpg
+2025-06-21 17:04:02,713 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-06-21 17:04:03,396 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-06-21 17:04:04,175 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-06-21 17:04:06,440 - INFO - Prediction completed. Value: Carrier, confidence: 30.597826838493347
+2025-06-21 17:04:06,441 - INFO - all classes scores: {'Cargo': 15.109804153442383, 'Carrier': 30.59782600402832, 'Cruise': 24.71980094909668, 'Military': 10.995586395263672, 'Tankers': 18.576980590820312}
+2025-06-21 17:04:06,444 - INFO - File moved: C:\Users\bvrvg\Desktop\Files\Projects\Ship_classfication\server\..\server\temp\645701_20250621_170402_8d9dd065.jpg -> C:\Users\bvrvg\Desktop\Files\Projects\Ship_classfication\server\..\archive\645701_20250621_170402_8d9dd065.jpg
+2025-06-21 17:04:06,445 - INFO - Analysis completed successfully: Carrier (30.60%)
+2025-06-21 17:04:06,447 - INFO - 127.0.0.1 - - [21/Jun/2025 17:04:06] "POST /classify HTTP/1.1" 200 -
