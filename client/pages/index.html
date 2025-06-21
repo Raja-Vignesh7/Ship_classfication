@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ship Classification AI</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="icon" href="../static/utils/ship_icon.avif" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Background Elements -->
+    <div class="ocean-bg"></div>
+    <div class="wave-animation"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-ship"></i>
+                <span>Ship AI Classifier</span>
+            </div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#features">Features</a>
+                <a href="#about">About</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="gradient-text">AI-Powered</span>
+                    <br>Ship Classification
+                </h1>
+                <p class="hero-subtitle">
+                    Upload an image and let our advanced AI identify different types of ships with high accuracy and confidence.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">90%</span>
+                        <span class="stat-label">Accuracy</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">1800</span>
+                        <span class="stat-label">Images Processed</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Ship Types</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <!-- Placeholder for ship image -->
+                <div class="image-placeholder">
+                    <img src="../static/utils/main_image.webp" alt="front page image" class="hero-stock-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Classification Section -->
+    <section class="classification-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Classify Your Ship Image</h2>
+                <p>Upload an image and get instant AI-powered classification results</p>
+            </div>
+            
+            <div class="classification-container">
+                <div class="upload-section">
+                    <div class="upload-area" id="uploadArea">
+                        <div class="upload-content">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                            <h3>Drop your image here</h3>
+                            <p>or click to browse</p>
+                            <input type="file" id="imageInput" accept="image/*" hidden>
+                            <div class="upload-formats">
+                                <span>Supported: JPG, PNG, GIF, WEBP</span>
+                            </div>
+                        </div>
+                        <div class="upload-overlay">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Drop to upload</span>
+                        </div>
+                    </div>
+                    
+                    <div class="image-preview" id="imagePreview" style="display: none;">
+                        <img id="previewImg" src="" alt="Preview">
+                        <div class="preview-actions">
+                            <button class="btn btn-secondary" id="changeImage">
+                                <i class="fas fa-edit"></i> Change Image
+                            </button>
+                            <button class="btn btn-primary" id="classifyBtn">
+                                <i class="fas fa-search"></i> Classify
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="results-section">
+                    <div class="results-placeholder" id="resultsPlaceholder">
+                        <i class="fas fa-chart-bar"></i>
+                        <h3>Results will appear here</h3>
+                        <p>Upload an image to see classification results</p>
+                    </div>
+                    
+                    <div class="results-content" id="resultsContent" style="display: none;">
+                        <div class="result-header">
+                            <h3>Classification Results</h3>
+                            <div class="result-timestamp" id="resultTimestamp"></div>
+                        </div>
+                        
+                        <div class="primary-result">
+                            <div class="result-icon">
+                                <i class="fas fa-ship"></i>
+                            </div>
+                            <div class="result-info">
+                                <h4 id="primaryClassification">Ship Type</h4>
+                                <div class="confidence-bar">
+                                    <div class="confidence-fill" id="confidenceFill"></div>
+                                    <span class="confidence-text" id="confidenceText">0%</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="all-results" id="allResults">
+                            <h5>All Classifications:</h5>
+                            <div class="results-list" id="resultsList"></div>
+                        </div>
+                        
+                        <div class="result-actions">
+                            <button class="btn btn-outline" id="downloadResult">
+                                <i class="fas fa-download"></i> Download Report
+                            </button>
+                            <button class="btn btn-primary" id="classifyAnother">
+                                <i class="fas fa-plus"></i> Classify Another
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="loading-state" id="loadingState" style="display: none;">
+                        <div class="loader"></div>
+                        <h3>Analyzing Image...</h3>
+                        <p>Our AI is processing your image</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose Our Ship Classifier?</h2>
+                <p>Advanced AI technology for accurate ship identification</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI-Powered</h3>
+                    <p>Advanced machine learning algorithms trained on thousands of ship images for accurate classification.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Lightning Fast</h3>
+                    <p>Get results in seconds with our optimized processing pipeline and efficient model architecture.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Secure & Private</h3>
+                    <p>Your images are processed securely and deleted after analysis. We respect your privacy.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>High Accuracy</h3>
+                    <p>Achieve over 90% accuracy with our state-of-the-art deep learning models.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Ship Classification AI</h2>
+                    <p>Our advanced AI system uses cutting-edge computer vision technology to identify and classify different types of ships from images. Whether you're a maritime professional, researcher, or enthusiast, our tool provides accurate and reliable ship identification.</p>
+                    
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Multiple ship type detection</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Confidence scoring</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Detailed classification results</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Easy-to-use interface</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-image">
+                    <!-- Placeholder for about image -->
+                    <div class="image-placeholder">
+                        <img src="../static/utils/About_image.jpg" alt="About section image" class="about-stock-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <i class="fas fa-ship"></i>
+                    <span>Ship AI Classifier</span>
+                </div>
+                <div class="footer-text">
+                    <p>&copy; 2024 Ship Classification AI. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <div class="toast-content">
+            <i class="toast-icon"></i>
+            <span class="toast-message"></span>
+        </div>
+    </div>
+
+    <script src="../static/js/script.js"></script>
+</body>
+</html>
