@@ -1,0 +1,46 @@
+2025-07-19 13:37:20,215 - INFO - Directory enshured: C:\Users\bvrvg\Desktop\Files\Projects\Ship_classfication\server\..\server\temp
+2025-07-19 13:37:20,216 - INFO - Directory enshured: C:\Users\bvrvg\Desktop\Files\Projects\Ship_classfication\server\..\archive
+2025-07-19 13:37:20,218 - INFO - Starting Ship Classification Server...
+2025-07-19 13:37:20,218 - INFO - Server configuration:
+2025-07-19 13:37:20,218 - INFO -   - Max file size: 16MB
+2025-07-19 13:37:20,218 - INFO -   - Allowed extensions: {'png', 'jpg', 'gif', 'jpeg', 'webp', 'bmp', 'tiff'}
+2025-07-19 13:37:20,219 - INFO -   - Temp folder: C:\Users\bvrvg\Desktop\Files\Projects\Ship_classfication\server\..\server\temp
+2025-07-19 13:37:20,219 - INFO -   - Archive folder: C:\Users\bvrvg\Desktop\Files\Projects\Ship_classfication\server\..\archive
+2025-07-19 13:37:20,264 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.137.11:5000
+2025-07-19 13:37:20,264 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-19 13:37:20,347 - INFO -  * Restarting with watchdog (windowsapi)
+2025-07-19 13:37:27,812 - INFO - Directory enshured: C:\Users\bvrvg\Desktop\Files\Projects\Ship_classfication\server\..\server\temp
+2025-07-19 13:37:27,812 - INFO - Directory enshured: C:\Users\bvrvg\Desktop\Files\Projects\Ship_classfication\server\..\archive
+2025-07-19 13:37:27,815 - INFO - Starting Ship Classification Server...
+2025-07-19 13:37:27,816 - INFO - Server configuration:
+2025-07-19 13:37:27,818 - INFO -   - Max file size: 16MB
+2025-07-19 13:37:27,820 - INFO -   - Allowed extensions: {'jpeg', 'webp', 'jpg', 'tiff', 'bmp', 'png', 'gif'}
+2025-07-19 13:37:27,820 - INFO -   - Temp folder: C:\Users\bvrvg\Desktop\Files\Projects\Ship_classfication\server\..\server\temp
+2025-07-19 13:37:27,821 - INFO -   - Archive folder: C:\Users\bvrvg\Desktop\Files\Projects\Ship_classfication\server\..\archive
+2025-07-19 13:37:27,833 - WARNING -  * Debugger is active!
+2025-07-19 13:37:27,864 - INFO -  * Debugger PIN: 981-686-749
+2025-07-19 13:37:28,060 - ERROR - 172.20.137.11 - - [19/Jul/2025 13:37:28] code 400, message Bad request syntax ('\x16\x03\x01\x06À\x01\x00\x06¼\x03\x03h\x95+3åøK')
+2025-07-19 13:37:28,066 - INFO - 172.20.137.11 - - [19/Jul/2025 13:37:28] "[35m[1m\x16\x03\x01\x06À\x01\x00\x06¼\x03\x03h\x95+3åøK[0m" HTTPStatus.BAD_REQUEST -
+2025-07-19 13:37:28,092 - ERROR - 172.20.137.11 - - [19/Jul/2025 13:37:28] code 400, message Bad request version ("Ø+§\x92,\x99\x0fv;\x9cQ\\ó$\x00Ö\x06zdô&\x8eÈHUõ|³s\x18\x9a\x83DbU\x07¯\x82\x92\x10SkÙ\x95ÎYë\x03ä\x95\x86\x12D<é+3k:x'WzÛå")
+2025-07-19 13:37:28,094 - INFO - 172.20.137.11 - - [19/Jul/2025 13:37:28] "[35m[1m\x16\x03\x01\x06 \x01\x00\x06\x9c\x03\x03¸ü\x1ce5üôË\x14Ä5,Æ\x11Äë×\x05\x9f+ß¢ìæËZâ7\x1a\x82Ô\x1f = \x1f(³×®r0Ø'\x9c0æUO\x8b\x9bJxí¸\x9d¥áT×æ/&z\x8e\x00 \x1a\x1a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x063::\x00\x00\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x00\x0d\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00\x0b\x00\x02\x01\x00\x00+\x00\x07\x06::\x03\x04\x03\x03\x003\x04ï\x04íJJ\x00\x01\x00\x11ì\x04À ¹¯ \x03Ä\x8bÙ\x07\x18\x03N|\x98j\x9fZfÚ\x95\x01è°z3È°\x03Ìc\x98)Jq\x96\x1d\x07É° z\x83\x1aQdý»¾¯pD>r§7\x11W)·(p¬\x8f\x81öhçq Æá3\x81Á`/´£ïÔ\x977\x91_DVÂ\x0c\x17J\x89i£\x93B{\x80\x96M\x88["ÏÌ?¾ÔK7\x82 \x83ò\x958<T\x08èièç>Ï\x86\x96á$\x92\x83Æ\x92\x80ù\x9eÔÅ úV\x10\x0eº£w EZ\x90\x13ôÅ®ÂâG4q\x98­g\x93ëy'§X"Ó\x97píÚ\x0b|\x98o"Ä\x11ÿÂ#{c\x0fÞC\x16«\x82»\x13\x910e\x95\x85è#\x9aUW°£\x14`é\x941x\x1bW*\x8awÒ\x19\x19J\x86 ðõ\x7f\x8cÑr>B¨\x9cI\x96ÝÜÉP\x13YT¸¤Àf³\x01âIQp'|Òb\x97\x97tû Â¥ìI»b\x04(sViì Ø+§\x92,\x99\x0fv;\x9cQ\\ó$\x00Ö\x06zdô&\x8eÈHUõ|³s\x18\x9a\x83DbU\x07¯\x82\x92\x10SkÙ\x95ÎYë\x03ä\x95\x86\x12D<é+3k:x'WzÛå\x1d[0m" HTTPStatus.BAD_REQUEST -
+2025-07-19 13:37:30,164 - INFO - 172.20.137.11 - - [19/Jul/2025 13:37:30] "GET / HTTP/1.1" 200 -
+2025-07-19 13:37:30,519 - INFO - 172.20.137.11 - - [19/Jul/2025 13:37:30] "GET /static/utils/About_image.jpg HTTP/1.1" 200 -
+2025-07-19 13:37:30,524 - INFO - 172.20.137.11 - - [19/Jul/2025 13:37:30] "GET /static/utils/main_image.webp HTTP/1.1" 200 -
+2025-07-19 13:37:30,541 - INFO - 172.20.137.11 - - [19/Jul/2025 13:37:30] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-07-19 13:37:31,310 - INFO - 172.20.137.11 - - [19/Jul/2025 13:37:31] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-07-19 13:37:33,447 - INFO - 172.20.137.11 - - [19/Jul/2025 13:37:33] "GET /static/utils/ship_icon.avif HTTP/1.1" 200 -
+2025-07-19 13:44:21,167 - INFO - File saved to temp: C:\Users\bvrvg\Desktop\Files\Projects\Ship_classfication\server\..\server\temp\images_1_20250719_134421_af1cb075.jpeg
+2025-07-19 13:44:21,197 - INFO - Starting prediction, file - C:\Users\bvrvg\Desktop\Files\Projects\Ship_classfication\server\..\server\temp\images_1_20250719_134421_af1cb075.jpeg
+2025-07-19 13:44:23,081 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-07-19 13:44:24,269 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-07-19 13:44:25,035 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-07-19 13:44:30,126 - INFO - Prediction completed. Value: Carrier, confidence: 26.670226454734802
+2025-07-19 13:44:30,128 - INFO - all classes scores: {'Cargo': 17.708979547023773, 'Carrier': 26.670226454734802, 'Cruise': 18.055810034275055, 'Military': 15.869322419166565, 'Tankers': 21.695654094219208}
+2025-07-19 13:44:30,133 - INFO - File moved: C:\Users\bvrvg\Desktop\Files\Projects\Ship_classfication\server\..\server\temp\images_1_20250719_134421_af1cb075.jpeg -> C:\Users\bvrvg\Desktop\Files\Projects\Ship_classfication\server\..\archive\images_1_20250719_134421_af1cb075.jpeg
+2025-07-19 13:44:30,133 - INFO - Analysis completed successfully: Carrier (26.67%)
+2025-07-19 13:44:30,138 - INFO - 172.20.137.11 - - [19/Jul/2025 13:44:30] "POST /classify HTTP/1.1" 200 -
+2025-07-19 13:45:49,428 - INFO - Performing cleanup on shutdown...
+2025-07-19 13:45:51,722 - INFO - Performing cleanup on shutdown...
